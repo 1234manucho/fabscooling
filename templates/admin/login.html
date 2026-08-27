@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block title %}Administrator Sign In | FABS Cooling Ltd{% endblock %}
+{% block content %}
+<section class="content-section" style="min-height:70vh;display:grid;place-items:center"><div class="container" style="max-width:520px"><div class="form-panel"><span class="section-kicker">Private workspace</span><h1 style="font-size:38px;letter-spacing:-.04em;margin:0 0 12px">Administrator sign in</h1><p style="color:var(--muted);font-size:14px;line-height:1.65;margin:0 0 28px">Review and manage incoming project enquiries.</p><form class="form-stack" method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><div class="field"><label for="email">Administrator email</label><input id="email" type="email" name="email" autocomplete="username" required></div><div class="field"><label for="password">Password</label><input id="password" type="password" name="password" autocomplete="current-password" required></div><button class="button-dark" type="submit">Sign in <i data-lucide="arrow-right"></i></button></form></div></div></section>
+{% endblock %}

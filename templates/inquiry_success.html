@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}Enquiry Received | FABS Cooling Ltd{% endblock %}
+{% block content %}<section class="content-section" style="min-height:65vh;display:grid;place-items:center"><div class="container"><div class="success-card"><div class="success-icon"><i data-lucide="check" style="width:34px;height:34px"></i></div><span class="section-kicker">Enquiry received</span><h1>Thank you, {{ inquiry.full_name }}.</h1><p style="color:var(--muted);line-height:1.75">Your cooling requirement has been recorded. Keep this reference for future correspondence.</p><div class="reference">{{ inquiry.reference }}</div><div><a class="button-dark" href="{{ url_for('index') }}">Return home <i data-lucide="arrow-right"></i></a></div></div></div></section>{% endblock %}
